@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body , html{
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 400;
+}
+
+input:focus,textarea:focus,select:focus{
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Basic class for tailwind */
+.linear-bg{
+    background: linear-gradient(269.82deg, #07091c00 0.17% , #080a1ad6 99.87%);
+}
+.hoveres{
+    @apply hidden
+}
+.hovered:hover .hoveres{
+    @apply flex-colo
+}
+.flex-colo{
+    @apply flex flex-col justify-center items-center;
+}
+.flex-rows{
+    @apply flex flex-row justify-center items-center;
+}
+.flex-btn{
+    @apply flex justify-between items-center;
+}
+.transitions{
+    @apply transition duration-300 ease-in
+}
+.zIndex{
+    z-index: 1000;
+}
+.shadoww{
+    box-shadow: 5px 0px 2px #090f1f;
+}
+.search{
+    position: relative;
+    width: 100%;
+    padding:1px 10px;
+    border-radius: 20px;
+    /* border: 1px solid #fff; */
+    color: gray;
+}
+.search::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(184, 184, 184, .1);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+} 
+.search .search-bi{
+    font-size: 35px;
+    padding: 3px 0px 0px 10px;
+}
+.search input{
+    background: none;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    color: #fff;
+    font-size: 12px;
+}
+header .song-side .popular-artists .item li{
+    list-style-type: none;
+    position: relative;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+header .song-side .popular-artists .item li img{
+    width: 100%;
+    /* min-width: 50px; */
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* music bar */
+.bar{
+    position: relative;
+    width: 420px;
+    height: 2px;
+    background: rgb(105, 105, 170, .1);
+    margin: 0px 20px 0px 10px;
+}
+
+.bar2{
+    position: absolute;
+    background: #36e2ec;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    transition: .7s linear;
+}
+.bar_dot{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #36e2ec;
+    border-radius: 50%;
+    left: 0%;
+    top:-1.5px;
+    transition: 1s linear;
+}
+.bar_dot::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #36e2ec;
+    border-radius: 50%;
+    left: -5.5px;
+    top: -6px;
+    box-shadow: inset 0px 0px 3px #36e2ec;
+}
+.inputt{
+    position: absolute;
+    width: 100%;
+    top: -7px;
+    left: -1px;
+    cursor: pointer;
+    z-index: 99999999999999;
+    /* transition: 3s linear; */
+    opacity: 0;
+}
+
+/* vol */
+.vol{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: rgb(105, 105, 170, .1);
+    margin-left: 65px;
+    /* border: 1px solid #fff; */
+}
+
+.bi{
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    top: -17px;
+    left: -30px;
+}
+
+.vol input{
+    position: absolute;
+    width: 100%;
+    top: -8px;
+    left: -1px;
+    cursor: pointer;
+    z-index: 999999999999999999;
+    opacity: 0;
+}
+
+.vol .vol_bar{
+    position: absolute;
+    background: #36e2ec;
+    width: 100px;
+    height: 100%;
+    top: 0;
+    transition: .7s linear;
+}
+
+.vol .dot{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #36e2ec;
+    border-radius: 50%;
+    left: 100%;
+    top:-1.5px;
+    transition: .7s linear;
+}
+
+.vol .dot::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #36e2ec;
+    border-radius: 50%;
+    left: -5.5px;
+    top: -6px;
+    box-shadow: inset 0px 0px 3px #36e2ec;
+}
+.hide-scrollbar::-webkit-scrollbar{
+    display:none;
+}
