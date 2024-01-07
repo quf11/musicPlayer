@@ -1,6 +1,8 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
+import { Link } from 'react-router-dom';
+import { FaHeart } from 'react-icons/fa';
 import { BannerImage } from '../../Data/BannerData';
 
 
@@ -19,7 +21,7 @@ function Banner() {
         BannerImage.map((banner , index) => (
           <SwiperSlide key={index} className='relative rounded overflow-hidden'>
             <img
-            src={`/images/img/banner/${banner.image}`}
+            src={`/images/img/Banner/${banner.image}`}
             alt={banner.alt}
             className='w-full h-full object-cover'
             />
@@ -34,3 +36,6 @@ function Banner() {
 }
 
 export default Banner
+
+
+

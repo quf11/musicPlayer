@@ -7,7 +7,7 @@ import Banner from '../Components/Home/Banner';
 function HomeScreen() {
   return (
     <Layout>
-      <div className='container mx-auto min-h-screen px-2 mb-6 overflow-hidden'>
+      <div className='container mx-auto bg-dry min-h-screen px-2 overflow-hidden'>
         <Banner/>
         <PopularMusics/>
         <Artists/>

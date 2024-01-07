@@ -6,7 +6,7 @@ import { BsSkipEndFill } from "react-icons/bs";
 function PlayBar() {
   return (
     <div className='bg-playbar sticky bottom-0 z-20 shadow'>
-      <div className='container mx-auto sm:flex py-2 px-2'>
+      <div className='container mx-auto sm:flex py-.7 px-2'>
         {/* image */}
           <div className='w-12 h-12 mx-5'>
             <img className='w-full h-full' src='/images/poster-master.jpg' alt=''/>

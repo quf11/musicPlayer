@@ -45,7 +45,7 @@ input:focus,textarea:focus,select:focus{
     position: relative;
     width: 100%;
     padding:1px 10px;
-    border-radius: 20px;
+    border-radius:0px;
     /* border: 1px solid #fff; */
     color: gray;
 }
@@ -200,3 +200,6 @@ header .song-side .popular-artists .item li img{
 .hide-scrollbar::-webkit-scrollbar{
     display:none;
 }
+
+
+
