@@ -79,8 +79,8 @@ function PlayBar() {
         </div>
         {/* vol */}
         <div>
-          <div className="vol flex items-center">
-            <BsVolumeOffFill className="text-white text-md bi" />
+          <div className="vol flex items-center" style={{marginTop:"25px"}}>
+            <BsVolumeOffFill className="text-white text-md bi" style={{top:"-11px"}}/>
             <input type="range" min="0" max="max" />
             <div className="vol_bar"></div>
             <div className="dot" id="vol_dot"></div>

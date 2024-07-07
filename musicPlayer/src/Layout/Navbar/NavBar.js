@@ -23,7 +23,7 @@ function NavBar() {
             </div>
             {/* search form */}
             <div className='col-span-3'>
-                <div class="search flex">
+                <div className="search flex">
                     <FiSearch className='search-bi'/>
                     <input type="text" placeholder="Search Music..."/>
                 </div>

@@ -8,7 +8,7 @@ function Register() {
   return (
     <>
     <Layout>
-        <div className='container mx-auto px-2 my-20 flex-colo'>
+        <div className='container mx-auto px-2 my-20 flex-colo' style={{height:"61vh"}}>
             <div className='w-full 2xl:w-2/5 gap-8 flex-colo p-12 md:w-3/5 bg-dry rounded-lg border border-border'>
                 {/* <img src='/images/logo.png' alt='logo' className='w-full h-12 object-contain'/> */}
                 <Input lable='FullName' placeholder='nastaranSaber' type='text' bg={true} />

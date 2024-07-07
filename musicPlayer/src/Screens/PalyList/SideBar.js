@@ -8,7 +8,7 @@ import PlayBar from '../../Layout/Playbar/PlayBar'
 function SideBar({children}) {
   return (
     <div>
-      <div className='min-h-screen container mx-auto'>
+      <div className='min-h-screen container mx-auto' style={{width:"100vh",minWidth:"100%"}}>
         <div className='xl:grid grid-cols-8 items-start'>
             <div className='col-span-2 min-h-screen sticky bg-main shadoww p-2 xl:mb-0'>
                 <Home/>

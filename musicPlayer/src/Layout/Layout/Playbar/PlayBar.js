@@ -29,8 +29,8 @@ function PlayBar() {
             <span className='text-white text-sm'>0:00</span>
             <div className='bar'>
                 <input className='inputt' type='range' min='0' max='max'/>
-                <div class="bar2" id="bar2"></div>
-                <div class="bar_dot"></div>
+                <div className="bar2" id="bar2"></div>
+                <div className="bar_dot"></div>
             </div>
             <span className='text-white text-sm'>0:30</span>
         </div>
@@ -39,8 +39,8 @@ function PlayBar() {
             <div className='vol flex items-center'>
                 <BsVolumeOffFill className='text-white text-md bi'/>
                 <input type='range' min='0' max='max'/>
-                <div class="vol_bar"></div>
-                <div class="dot" id="vol_dot"></div>
+                <div className="vol_bar"></div>
+                <div className="dot" id="vol_dot"></div>
             </div>
         </div>
       </div>

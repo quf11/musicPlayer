@@ -15,13 +15,10 @@ function Login({ setAuth }) {
   const handleEmailChange = (e) => {
 
     setEmail(e.target.value);
-
   };
 
   const handlePasswordChange = (e) => {
-
     setPassword(e.target.value);
-
   };
 
   const handleSignInClick = () => {
@@ -80,7 +77,7 @@ function Login({ setAuth }) {
   return (
     <>
       <Layout>
-        <div className="container mx-auto px-2 my-20 flex-colo">
+        <div className="container mx-auto px-2 my-20 flex-colo" style={{height:"61vh"}}>
           <div className="w-full 2xl:w-2/5 gap-8 flex-colo p-8 sm:p-14 md:w-3/5 bg-dry rounded-lg border border-border">
             {/* <img src='/images/logo.png' alt='logo' className='w-full h-12 object-contain'/> */}
             <input label='Email' placeholder='musico@gmail.com' type='email' bg={true} value={email} onChange={handleEmailChange} className={`w-full text-sm mt-2 p-4 border border-border rounded text-white
